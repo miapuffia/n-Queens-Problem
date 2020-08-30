@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>n-Queens Problem</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://miapuffia.com/scripts/prefix.min.js"></script>
+	</head>
+	<body>
+		<div id="flexParent">
+			<div id="controlPanelFlex">
+				<div id="controlPanel">
+					<div class="spanAllColumns" id="titleText">
+						This demonstration shows how a (n x n) size
+						<br>
+						chess board can be populated with n queens
+						<br>under the condition that none can take any other.
+					</div>
+					
+					<label for="boardSize" class="row2">Board size:&nbsp;</label>
+					<div>
+						<input type="number" id="boardSize" class="row2" name="boardSize" min="1" max="30" value="5">
+						<br>
+						Be careful with sizes > 20!
+					</div>
+					
+					<button class="spanAllColumns" id="placeQueens">Place queens</button>
+					
+					<div>Computation time:</div>
+					<div id="runTime"></div>
+				</div>
+			</div>
+			
+			<div id="canvasFlex">
+				<canvas id="canvas"></canvas>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>

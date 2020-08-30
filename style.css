@@ -1,0 +1,60 @@
+/*
+ * This flex code is pretty botched
+*/
+
+body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#canvas {
+	background-color: white;
+	border: 1px solid black;
+	
+	display: flex;
+	margin: auto;
+}
+
+#flexParent {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+#controlPanelFlex {
+	display: table;
+	margin: auto;
+}
+
+#controlPanel {
+	margin: 20px;
+	
+	align-content: center;
+	
+	display: grid;
+	grid-template-columns: max-content max-content;
+	grid-row-gap: 20px;
+}
+
+.spanAllColumns {
+	grid-column: 1 / -1;
+}
+
+#titleText {
+	font-size: 1.5em;
+}
+
+.row2 {
+	grid-row: 2;
+}
+
+#boardSize {
+	width: 100%;
+}
+
+#canvasFlex {
+	flex-grow: 1;
+	display: flex;
+}
